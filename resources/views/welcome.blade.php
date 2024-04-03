@@ -45,16 +45,17 @@
                                     </button>
                                 </form>
                             </div>
-                            {{-- <div class="col-md-4 my-2">
-                                <form action="" method="POST">
+                            <div class="col-md-4 my-2">
+                                <form action="{{ route('stripe.payment') }}" method="POST">
                                     @csrf
-                                    <input type="hidden" value="40" name="price">
+                                    <input type="hidden" value="30" name="price">
                                     <button type="submit" class="btn btn-outline-dark flex-shrink-0" type="button">
                                         <i class="bi-cart-fill me-1"></i>
                                         Buy With Stripe
                                     </button>
                                 </form>
                             </div>
+                            {{--
                             <div class="col-md-4 my-2">
                                 <form action="" method="POST">
                                     @csrf
@@ -203,7 +204,8 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                            alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
